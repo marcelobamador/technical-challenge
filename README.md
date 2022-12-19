@@ -53,7 +53,7 @@ To record the data, the Postgres database was used.
   - Return model..:<br />
       {<br />
         "id": 1,<br />
-        "name": "DVD"
+        "name": "DVD"<br />
       }<br />
       
 # COMO EXECUTAR A APLICAÇÃO<br />
