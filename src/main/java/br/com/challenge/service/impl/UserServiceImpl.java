@@ -44,7 +44,6 @@ public class UserServiceImpl implements UserService {
 			throw new ObjectNotFoundException("User not found: " + id);
 		}
 		userRepository.deleteById(id);
-		;
 	}
 
 	@Transactional
