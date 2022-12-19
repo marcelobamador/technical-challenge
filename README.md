@@ -9,22 +9,22 @@ To record the data, the Postgres database was used.
   - http://localhost:9182/v1/user<br />
   - http://localhost:9182/v1/stock-movement<br /> 
 <br /> 
-# GET WITH PARAM
+# GET WITH PARAM<br />
   - http://localhost:9182/v1/itens/1<br />
   - http://localhost:9182/v1/user/1<br />
   - http://localhost:9182/v1/stock-movement/1<br />
 <br />
-# POST
+# POST<br />
   - http://localhost:9182/v1/itens<br />
   - http://localhost:9182/v1/user<br />
   - http://localhost:9182/v1/stock-movement<br />
 <br />
-# PATCH
+# PATCH<br />
   - http://localhost:9182/v1/itens/1<br />
   - http://localhost:9182/v1/user/2<br />
   - http://localhost:9182/v1/stock-movement/1<br />
 <br />
-# DELETE
+# DELETE<br />
   - http://localhost:9182/v1/itens/2<br />
   - http://localhost:9182/v1/user/2<br />
   - http://localhost:9182/v1/stock-movement/1<br />
