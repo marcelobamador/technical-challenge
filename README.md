@@ -4,7 +4,7 @@ The challenge was developed using the JAVA language in its version 11.
 To record the data, the Postgres database was used. 
 
 # The following endpoints were created:<br />
-# Get<br />
+# Get all itens<br />
   - Method...........: getAllItens<br />
   - Return...........: Returns a list of all registered items<br />
   - Url..............: http://localhost:9182/v1/itens<br />
@@ -16,6 +16,38 @@ To record the data, the Postgres database was used.
       {<br />
         "id": 1,<br />
         "name": "CD"<br />
+      }<br />
+      <br />
+# Get all users<br />
+  - Method...........: getAllUsers<br />
+  - Return...........: Returns a list of all registered users<br />
+  - Url..............: http://localhost:9182/v1/user<br />
+  - Return model:<br />
+      {<br />
+        "id": 1,<br />
+        "name": "Otavio",<br />
+        "email":"otavio@gmail.com"<br />
+      },<br />
+      {<br />
+        "id": 1,<br />
+        "name": "Bruno",<br />
+        "email":"bruno@gmail.com"<br />
+      }<br />
+      <br />
+# Get all Stock<br />
+  - Method...........: getAllStock<br />
+  - Return...........: Returns a list of all registered stock movement<br />
+  - Url..............: http://localhost:9182/v1/stock-movement<br />
+  - Return model:<br />
+      {<br />
+        "id": 1,<br />
+        "name": "Otavio",<br />
+        "email":"otavio@gmail.com"<br />
+      },<br />
+      {<br />
+        "id": 1,<br />
+        "name": "Bruno",<br />
+        "email":"bruno@gmail.com"<br />
       }<br />
       <br />
 # Get with param<br />
@@ -55,6 +87,9 @@ To record the data, the Postgres database was used.
         "id": 1,<br />
         "name": "DVD"<br />
       }<br />
+# Delete<br />
+  - Method..............: deleteItemById<br />
+  - Url.................: http://localhost:9182/v1/itens/1<br />
       
 # COMO EXECUTAR A APLICAÇÃO<br />
 - Fazer o clone da aplicação na sua máquina.
