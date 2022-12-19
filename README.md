@@ -5,21 +5,13 @@ To record the data, the Postgres database was used.
 
 # The following endpoints were created:<br />
 # Get<br />
-  - Metodo...........: getAllTerminals<br />
-  - Retorno..........: Retorna uma lista de todos os terminais cadastrados<br />
-  - Url..............: https://dock-test-app.herokuapp.com/v1/terminals<br />
-  - Modelo de retorno:<br />
+  - Method...........: getAllItens<br />
+  - Return...........: Returns a list of all registered items<br />
+  - Url..............: http://localhost:9182/v1/itens<br />
+  - Return model:<br />
       {<br />
-        "logic": 44332211,<br />
-        "serial": "123",<br />
-        "model": "PWWIN",<br />
-        "sam": 0,<br />
-        "ptid": "F04A2E4088B",<br />
-        "plat": 4,<br />
-        "version": "8.00b3",<br />
-        "mxr": 0,<br />
-        "mxf":16777216,<br />
-        "PVERFM":”PWWIN"<br />
+        "id": 1,<br />
+        "name": "CD"<br />
       }<br />
       <br />
 # Get with param<br />
