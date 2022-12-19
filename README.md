@@ -41,13 +41,9 @@ To record the data, the Postgres database was used.
   - Return model:<br />
       {<br />
         "id": 1,<br />
-        "name": "Otavio",<br />
-        "email":"otavio@gmail.com"<br />
-      },<br />
-      {<br />
-        "id": 1,<br />
-        "name": "Bruno",<br />
-        "email":"bruno@gmail.com"<br />
+        "creationDate": "2022-12-19T03:00:00.000+00:00",<br />
+        "item":{id:1, name:"CD"},<br />
+        "quantity":5
       }<br />
       <br />
 # Get with param<br />
