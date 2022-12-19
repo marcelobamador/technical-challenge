@@ -45,25 +45,17 @@ To record the data, the Postgres database was used.
         "name": "CD"
       }<br />
 # Post<br />
-  - Metodo.............: addTerminal<br />
-  - Entrada............: String
-  - Obs................: Para que seja aceito a string enviada, deve-se colocar na requisição o header: Content-Type: text/html. Se for enviado como JSON não será aceito.
-  - Body da requisição.: 44332211;123;PWWIN;0;F04A2E4088B;4;8.00b3;0;16777216;PWWIN<br />
-  - Retorno............: Retorna o objeto cadastrado no banco de dados.<br />
-  - Url................: https://dock-test-app.herokuapp.com/v1/terminals<br />
-  - Modelo de retorno..:<br />
+  - Method.............: addItem<br />
+  - Obs................: In order for the sent string to be accepted, the header must be included in the request: Content-Type: text/html. If sent as JSON it will not be accepted.
+  - Body of the request.: 2;DVD<br />
+  - Return..............: Returns the object registered in the database.<br />
+  - Url.................: http://localhost:9182/v1/itens<br />
+  - Return model..:<br />
       {<br />
-        "logic": 44332211,<br />
-        "serial": "123",<br />
-        "model": "PWWIN",<br />
-        "sam": 0,<br />
-        "ptid": "F04A2E4088B",<br />
-        "plat": 4,<br />
-        "version": "8.00b3",<br />
-        "mxr": 0,<br />
-        "mxf":16777216,<br />
-        "PVERFM":”PWWIN"<br />
+        "id": 1,<br />
+        "name": "DVD"
       }<br />
+      
 # COMO EXECUTAR A APLICAÇÃO<br />
 - Fazer o clone da aplicação na sua máquina.
 - Selecionar a branch <b>MASTER</b>
