@@ -12,25 +12,21 @@ To record the data, the Postgres database was used.
       {<br />
         "id": 1,<br />
         "name": "CD"<br />
+      },<br />
+      {<br />
+        "id": 1,<br />
+        "name": "CD"<br />
       }<br />
       <br />
 # Get with param<br />
-  - Metodo...........: getAllTerminalsById<br />
-  - Entrada..........: id (equivalente ao campo 'logic')<br />
-  - Retorno..........: Retorna o objeto pesquisado caso exista no banco de dados.<br />
-  - Url..............: https://dock-test-app.herokuapp.com/v1/terminals/44332211<br />
-  - Modelo de retorno:<br />
+  - Method...........: getAllItensById<br />
+  - Code.............: id (equivalent to the field 'id')<br />
+  - Return...........: Returns the searched object if it exists in the database.<br />
+  - Url..............: http://localhost:9182/v1/itens/1<br />
+  - Return model:<br />
       {<br />
-        "logic": 44332211,<br />
-        "serial": "123",<br />
-        "model": "PWWIN",<br />
-        "sam": 0,<br />
-        "ptid": "F04A2E4088B",<br />
-        "plat": 4,<br />
-        "version": "8.00b3",<br />
-        "mxr": 0,<br />
-        "mxf":16777216,<br />
-        "PVERFM":”PWWIN"<br />
+        "id": 1,<br />
+        "name": "CD"<br />
       }<br />
       <br />
 # Patch with param<br />
