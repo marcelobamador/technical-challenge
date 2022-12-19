@@ -4,6 +4,33 @@ The challenge was developed using the JAVA language in its version 11.
 To record the data, the Postgres database was used. 
 
 # The following endpoints were created:<br />
+# GET
+  - http://localhost:9182/v1/itens<br />
+  - http://localhost:9182/v1/user<br />
+  - http://localhost:9182/v1/stock-movement<br /> 
+<br /> 
+#GET WITH PARAM
+  - http://localhost:9182/v1/itens/1<br />
+  - http://localhost:9182/v1/user/1<br />
+  - http://localhost:9182/v1/stock-movement/1<br />
+<br />
+# POST
+  - http://localhost:9182/v1/itens<br />
+  - http://localhost:9182/v1/user<br />
+  - http://localhost:9182/v1/stock-movement<br />
+<br />
+# PATCH
+  - http://localhost:9182/v1/itens/1<br />
+  - http://localhost:9182/v1/user/2<br />
+  - http://localhost:9182/v1/stock-movement/1<br />
+<br />
+# DELETE
+  - http://localhost:9182/v1/itens/2<br />
+  - http://localhost:9182/v1/user/2<br />
+  - http://localhost:9182/v1/stock-movement/1<br />
+<br />
+# Examples of requests below<br />
+<br />
 # Get all itens<br />
   - Method...........: getAllItens<br />
   - Return...........: Returns a list of all registered items<br />
@@ -16,34 +43,6 @@ To record the data, the Postgres database was used.
       {<br />
         "id": 1,<br />
         "name": "CD"<br />
-      }<br />
-      <br />
-# Get all users<br />
-  - Method...........: getAllUsers<br />
-  - Return...........: Returns a list of all registered users<br />
-  - Url..............: http://localhost:9182/v1/user<br />
-  - Return model:<br />
-      {<br />
-        "id": 1,<br />
-        "name": "Otavio",<br />
-        "email":"otavio@gmail.com"<br />
-      },<br />
-      {<br />
-        "id": 1,<br />
-        "name": "Bruno",<br />
-        "email":"bruno@gmail.com"<br />
-      }<br />
-      <br />
-# Get all Stock<br />
-  - Method...........: getAllStock<br />
-  - Return...........: Returns a list of all registered stock movement<br />
-  - Url..............: http://localhost:9182/v1/stock-movement<br />
-  - Return model:<br />
-      {<br />
-        "id": 1,<br />
-        "creationDate": "2022-12-19T03:00:00.000+00:00",<br />
-        "item":{id:1, name:"CD"},<br />
-        "quantity":5
       }<br />
       <br />
 # Get with param<br />
@@ -87,15 +86,14 @@ To record the data, the Postgres database was used.
   - Method..............: deleteItemById<br />
   - Url.................: http://localhost:9182/v1/itens/1<br />
       
-# COMO EXECUTAR A APLICAÇÃO<br />
-- Fazer o clone da aplicação na sua máquina.
-- Selecionar a branch <b>MASTER</b>
-- Após o clone, importar o projeto para a sua IDE (Eclipse, STS, etc).
-- Clicar com o botão direito do mouse em cima do projeto -> Run as -> Maven Clean
-- Após o Maven clean, clicar com o botão direito do mouse em cima do projeto -> Run as -> Maven Install
-- Após o Maven Install, clicar com o botão direito do mouse em cima do projeto -> Run as -> Spring boot app
-- Com os passos acima, o projeto vai subir na porta 9180 e poderá ser acessado assim: http://localhost:9180/v1/terminals (local)
-
-# EXECUTAR A APLICAÇÃO NO HEROKU
-- A aplicação está disponivel no link: https://dock-test-app.herokuapp.com 
-- Os endpoints a serem utilizados estão acima.
+# HOW TO RUN THE APPLICATION<br />
+- Clone the application on your machine.
+- Select the branch <b>MASTER</b>
+- After the clone, import the project to your IDE (Eclipse, STS, etc).
+- Right-click on the project -> Run as -> Maven Clean
+- After Maven clean, right-click on the project -> Run as -> Maven Install
+- After Maven Install, right-click on the project -> Run as -> Spring boot app
+- With the steps above, the project will go up on port 9182 and can be accessed like this: http://localhost:9182/v1/itens (local)<br />
+<br />
+# IMPORTANT<br />
+PostgreSQL database must be installed on the machine
